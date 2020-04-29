@@ -1,0 +1,173 @@
+@media only screen and (max-width: 600px) {
+    body {
+     background-color: lightblue;
+     }
+   }
+     
+     
+     
+
+     /* For desktop: */
+     .col-1 {width: 8.33%;}
+     .col-2 {width: 16.66%;}
+     .col-3 {width: 25%;}
+     .col-4 {width: 33.33%;}
+     .col-5 {width: 41.66%;}
+     .col-6 {width: 50%;}
+     .col-7 {width: 58.33%;}
+     .col-8 {width: 66.66%;}
+     .col-9 {width: 75%;}
+     .col-10 {width: 83.33%;}
+     .col-11 {width: 91.66%;}
+     .col-12 {width: 100%;}
+
+     @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+     [class*="col-"] {
+     width: 50%;
+     }
+   }
+
+   /*For iPads*/
+   [class*="col-"] {
+     width: 100%;
+   }
+
+
+
+
+
+       /* for the top banner of the webpage*/
+
+       .headerGridContainer {
+           display: grid;
+           grid-template-areas:
+           'header logo logo logo';
+           grid-gap: 10px;
+           background-color: #2196F3;
+           padding: 10px;
+           
+       }
+
+.item1Header { 
+           grid-area: header; 
+           font-size: 50px;
+           padding: 2%;
+           color: white;
+           font-family: Roboto;
+           font-style: normal;
+           font-weight: normal;
+           line-height: 75px;
+           display: flex;
+          align-items: center;
+          text-align: center;
+
+           color: #FFFFFF;
+
+       }
+
+       .item2Header {
+           grid-area: logo;
+       }
+
+
+
+/*for the grid contents on a webpage*/
+
+
+
+
+
+
+.item1 {grid-area: category1; }
+.item2 { grid-area: image11; }
+.item3 { grid-area: image12; }
+.item4 { grid-area: category2; }
+.item5 { grid-area: image21; }
+.item6 { grid-area: image22; }
+.item7 { grid-area: category3; }
+.item8 { grid-area: image31; }
+.item9 { grid-area: image32; }
+
+.grid-container {
+ display: grid;
+ grid-template-areas:
+   'category1 image11 image12'
+   'category2 image21 image22'
+   'category3 image31 image32';
+ grid-gap: 10px;
+ background-color: #2196F3;
+ padding: 10px;
+ margin-bottom: 2%;
+}
+
+.grid-container > div {
+ background-color: rgba(255, 255, 255, 0.8);
+ text-align: center;
+ padding: 20px 0;
+ font-size: 30px;
+}
+
+
+/*for the footer banner on the webpage*/
+
+.footerGridContainer {
+    display: grid;
+   grid-template-areas:
+   'footer logo';
+   grid-gap: 10px;
+   background-color: orange;
+   padding: 10px;
+}
+
+.item1Footer { 
+           grid-area: footer; 
+           font-size: 50px;
+           padding: 2%;
+           color: white;
+           font-family: Roboto;
+           font-style: normal;
+           font-weight: normal;
+           line-height: 75px;
+           display: flex;
+          align-items: center;
+          text-align: center;
+
+           color: #FFFFFF;
+
+       }
+
+       .item2Footer {
+           grid-area: logo;
+       }
+
+       /*Extra homework grid*/
+
+       .randomGridContainer {
+        display: grid;
+        grid-template-areas: 'body logo';
+       grid-template-columns: 80px 200px auto 40px;
+       background-color: pink;
+       grid-gap:10px;
+        }
+
+        .item1Random { 
+           grid-area: random; 
+           font-size: 50px;
+           padding: 2%;
+           color: pink;
+           font-family: Roboto;
+           font-style: normal;
+           font-weight: normal;
+           line-height: 75px;
+           display: flex;
+          align-items: center;
+          text-align: center;
+
+           color: #FFFFFF;
+
+       }
+
+       .item2Random {
+           grid-area: logo;
+       }
